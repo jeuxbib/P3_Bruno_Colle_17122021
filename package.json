@@ -1,0 +1,19 @@
+{
+  "name": "p3_colle_code",
+  "version": "1.0.0",
+  "description": "OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeuxbib/P3_Colle8code.git"
+  },
+  "author": "Bruno Colle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeuxbib/P3_Colle8code/issues"
+  },
+  "homepage": "https://github.com/jeuxbib/P3_Colle8code#readme"
+}
