@@ -616,3 +616,30 @@ header i {
   display: flex;
   justify-content: center;
 }
+
+/* FOOTER */
+footer {
+  background-color: #332f2f;
+  margin-top: 45px;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-top: 60px;
+}
+footer img {
+  height: 1.3rem;
+  filter: invert(100%);
+}
+footer ul {
+  margin: 20px auto;
+}
+footer li {
+  list-style-type: none;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer i {
+  margin-right: 10px;
+}
