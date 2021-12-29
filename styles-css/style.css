@@ -137,6 +137,76 @@ p {
 /*Code couleur*/
 /* font */
 /* Margin */
+
+/* Header */
+header {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  height: 1.9rem;
+}
+
+.maps {
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+.maps__icon {
+  width: 15px;
+}
+.maps__search input {
+  width: 150px;
+  border: none;
+  outline: none;
+  background-color: #eaeaea;
+  font-size: 1rem;
+  padding: 15px 0px 15px 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#accueil {
+  background: #f6f6f6;
+  width: 100%;
+}
+
+.slogan {
+  text-align: center;
+}
+.slogan p {
+  font-size: 1.1em;
+}
+.slogan__btn {
+  background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  color: white;
+  width: 220px;
+  height: 50px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 4px 4px 6px #332f2f;
+  margin: 20px 0 50px;
+}
+.slogan button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #000;
+}
+
+.action h2 {
+  padding: 40px 0 10px 20px;
+}
+
 /* MediaQuery*/
 
 
