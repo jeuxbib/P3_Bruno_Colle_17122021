@@ -69,13 +69,13 @@
   animation: defilement-rtl 3s ease-in-out 2s forwards;
 }
 #loader .logo1 {
-  margin-top: 200px;
+  margin-top: 300px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 #loader .logo1 img {
-  max-width: 200px;
+  max-width: 300px;
   position: absolute;
   animation: rotate 1.5s linear;
 }
@@ -85,11 +85,11 @@
   text-align: center;
   max-height: 100vh;
   border-radius: 10px;
-  background: #9356DC;
+  background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   line-height: 3rem;
   font-family: "Shrikhand";
   color: white;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-top: 50px;
   padding: 20px;
 }
@@ -294,5 +294,123 @@ header .logo {
     align-items: center;
   }
 }
+.menus_restaurant {
+  background: #f2f2f2;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.menus_restaurant h2 {
+  padding-top: 45px;
+}
+.menus_restaurant p {
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .menus_restaurant {
+    align-items: center;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .menus__cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .menus__cartes {
+    flex-wrap: wrap;
+    max-width: 1400px;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px #aaa;
+  margin: 10px;
+  position: relative;
+  background: #fff;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 45vw;
+    padding: 0;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .card {
+    max-width: 640px;
+  }
+}
+.card img {
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 100%;
+  max-height: 180px;
+}
+.card .new {
+  color: #fff;
+  background:linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-weight: bold;
+  font-size: 15px;
+  width: 20%;
+  text-align: center;
+  animation: clignote 2s linear infinite;
+}
+
+.carte {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}
+.carte .heart {
+  color: #686565;
+  font-size: 1.6rem;
+}
+.carte .heart:hover {
+  cursor: pointer;
+  animation: heart 5s infinite alternate;
+  background:linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.card figure {
+  width: 100%;
+  margin: 0px;
+}
+.card figure:hover {
+  background-blend-mode: lighten;
+  box-shadow: 2px 6px 20px #999999;
+  border-radius: 20px;
+}
+
+.card figcaption {
+  padding: 10px 15px 15px 15px;
+}
+/*Header logo idem home +fleche retour Menu*/
+header i {
+  position: absolute;
+  left: 1rem;
+  margin-top: -5px;
+}
 
