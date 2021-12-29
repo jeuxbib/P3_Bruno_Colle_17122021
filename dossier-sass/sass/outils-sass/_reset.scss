@@ -1,0 +1,24 @@
+
+/* Box sizing*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* List*/
+  ul {
+    list-style: none;
+  }
+  
+  /*Media*/
+  img
+  {
+    max-width: 100%;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  

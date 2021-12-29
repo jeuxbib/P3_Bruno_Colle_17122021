@@ -1,0 +1,26 @@
+footer {
+    background-color: $color-gris;
+    margin-top: 45px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    img {
+        height: 1.3rem;
+        filter: invert(100%);
+    }
+    ul {
+        margin: 20px auto;
+    }
+    li {
+        list-style-type: none;
+    }
+    a {
+        color: $color-white;
+        text-decoration: none;
+    }
+    i {
+        margin-right: 10px;
+    }
+   
+}

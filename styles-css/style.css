@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+    /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+    /* position finale à gauche */
+  }
+}
+/* la rotation de mon img loader*/
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+  
+#loader {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /*page site en arriere plan*/
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  animation: defilement-rtl 3s ease-in-out 2s forwards;
+}
+#loader .logo1 {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#loader .logo1 img {
+  max-width: 200px;
+  position: absolute;
+  animation: rotate 1.5s linear;
+}
+#loader .slogan1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-height: 100vh;
+  border-radius: 10px;
+  background: #9356DC;
+  line-height: 3rem;
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 1rem;
+  margin-top: 50px;
+  padding: 20px;
+}
+/* Box sizing*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* List*/
+ul {
+  list-style: none;
+}
+
+/*Media*/
+img {
+  max-width: 100%;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/*Polices et size*/
+/*Code couleur*/
+/* font */
+/* Margin */
+/* MediaQuery*/
+
+

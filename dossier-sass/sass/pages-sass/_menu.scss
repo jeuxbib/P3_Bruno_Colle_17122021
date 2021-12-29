@@ -1,0 +1,132 @@
+/*Header logo idem home +fleche retour Menu*/
+
+header i {
+    position: absolute;
+    left: 1rem;
+    margin-top: -5px;
+}
+
+
+/*Main*/
+
+.header__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+
+/* Titre Menu*/
+
+.menus__title {
+    @include title;
+    .heart {
+        @include heart;
+    }
+    .heart:hover {
+        @include heart-color;
+    }
+}
+
+
+/* Carte menu*/
+
+.main__menu {
+    @include main-menu;
+}
+
+.full__menu {
+    @include laptop {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+.menu {
+    &__title {
+        @include after;
+    }
+}
+
+.meals {
+    h4 {
+        font-family: 'Roboto';
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    @include meals;
+    @include laptop {
+        width: 300px;
+    }
+}
+//l'apparance des 3 blocs repas en progression
+.delay1 {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.delay2 {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.delay3 {
+    animation: fadeInUp 3s ease-in-out;
+}
+
+.delay4 {
+    animation: fadeInUp 4s ease-in-out;
+}
+
+.full__menu {
+    h3 {
+        text-transform: uppercase; // Les caractères sont affichés en majuscules.
+        font-weight: lighter;//Le texte paraît plus fin.
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+}
+
+.cross {
+    @include cross;
+}
+
+.last__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.2em;
+}
+
+.last__line p {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @include desktop {
+        padding-right: 20px;
+    }
+}
+
+.last__line span {
+    margin-right: 2px;
+}
+
+.btn__order button {
+    @include btn__color;
+    text-align: center;
+    margin: 30px 0;
+    @include desktop {
+        max-width: 200px;
+    }
+    &:hover {
+        background-color: lighten(#9356dc, 10%);
+        background-blend-mode: lighten;// pour fusionnerles couleurs entre eux
+        @include darker-shadow;
+    }
+}
+
+.btn__order {
+    display: flex;
+    justify-content: center;
+}

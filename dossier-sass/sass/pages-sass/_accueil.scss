@@ -1,0 +1,158 @@
+
+.maps {
+    background: $color-gris-medium;
+    @include flex-config($flex: 1, $justify-content: center, $align-items: center);
+    &__icon {
+        width: 15px;
+    }
+    &__search input {
+        width: 150px;
+        border: none;
+        outline: none;
+        background-color: $color-gris-medium;
+        font-size: 1rem;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+#accueil {
+    background: $color-gris-light;
+    width: 100%;
+}
+
+.slogan {
+    p {
+        font-size: 1.1em;
+    }
+    text-align: center;
+    &__btn {
+        @include btn__color;
+        margin: 20px 0 50px;
+    }
+    button:hover {
+        background-color: lighten(#9356dc, 10%);
+        background-blend-mode: lighten;
+        @include darker-shadow;
+    }
+}
+
+        //   action fonctionnement 
+        .action {
+            h2 {
+                padding: 40px 0 10px 20px;
+                @include tablet {
+                    text-align: center;
+                }
+            }
+            ul {
+                margin: 20px auto;
+                @include desktop {
+                    justify-content: space-between;
+                    max-width: 1400px;
+                }
+            }
+            p {
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+            &__item li:hover {
+                background: $shadow-color;
+                 cursor: pointer;
+                box-shadow: 2px 6px 20px rgb(153 153 153 / 60%);
+                 z-index: 1;
+            .action__icon {
+                    color: $color-primary;
+                }
+            }
+            &__item li {
+                width: 90%;
+                height: 80px;
+                @include flex-config($flex: 1, $flex-direction: row, $justify-content: flex-start, $align-items: center);
+                margin: $margin;
+                border-radius: 20px;
+                background: #f6f6f6;
+            }
+            &__icon {
+                margin-left: 10px;
+                margin-right: 20px;
+                color: #8f8d8d;
+                font-size: 1.1em;
+            }
+            &__number {
+                @include number;
+            }
+            &__item {
+                @include tablet {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        
+        // Menus restaurant
+        .menus_restaurant {
+            background: #f2f2f2;
+            @include flex-config($flex: 1, $flex-direction: column);
+            padding-bottom: 30px;
+            h2 {
+                padding-top: 45px;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+            @include tablet {
+                align-items: center;
+            }
+        }
+        
+        .menus__cartes {
+            @include tablet {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            @include large {
+                flex-wrap: wrap;
+                max-width: 1400px;
+            }
+        }
+        
+        .card {
+            @include card;
+            @include tablet {
+                width: 75vw;
+            }
+            @include laptop {
+                max-width: 45vw;
+                padding: 0;
+                margin: 10px;
+            }
+            @include desktop {
+                max-width: 640px;
+            }
+            img {
+                @include card-img;
+            }
+            .new {
+                @include btn-card;
+            }
+        }
+        
+        .carte {
+            @include flex-config($flex: 1, $justify-content: space-between, $align-items: center);
+            .heart {
+                @include heart;
+            }
+            .heart:hover {
+                @include heart-color;
+            }
+        }
+        
+        .card figure {
+            @include card-figure;
+        }
+        
+        .card figcaption {
+            @include card-figcaption;
+        }

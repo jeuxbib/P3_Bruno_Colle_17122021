@@ -1,0 +1,26 @@
+/*Code couleur*/
+
+$color-white:white;
+$color-black:black;
+$color-gris:#332f2f;
+$color-gris-medium:#eaeaea;
+$color-gris-light:#f6f6f6;
+$shadow-color: #f7f1fc;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$linear-gradient:linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+
+/* font */
+
+$font-title: 'Shrikhand';
+$font-primary: 'Roboto',
+sans-serif;
+
+/* Margin */
+
+$margin: 25px;
+
+/* MediaQuery*/
+
+$breakpoints: ( tablet: 768px, laptop: 1024px, desktop: 1400px, large: 1900px);
