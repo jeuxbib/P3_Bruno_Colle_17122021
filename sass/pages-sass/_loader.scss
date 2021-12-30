@@ -18,8 +18,8 @@
         align-items: flex-end;
         img {
             max-width: 200px;
-            position: absolute;
-            animation: rotate 1.5s linear;
+            position: fixed;
+            animation: rotate 3s linear;
         }
     }
     .slogan1 {

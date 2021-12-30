@@ -48,10 +48,10 @@
     /* la rotation de mon img loader*/
     @keyframes rotate {
         from {
-            -webkit-transform: rotate(360deg);
+            transform: rotate(0deg);
         }
         to {
-            -webkit-transform: rotate(0deg);
+            transform: rotate(1turn);
         }
     }
     
