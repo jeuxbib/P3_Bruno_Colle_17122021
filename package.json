@@ -4,8 +4,8 @@
   "description": "Dynamiser une page web avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./sass/main.scss:./styles-css/style.css -w --style compressed",
-    "prefix": "postcss ./styles-css/style.css --use -d autoprefixer"
+    "sass": "sass --watch ./sass/style.scss:./styles-css/style.css --style compressed",
+    "prefix": "postcss ./styles-css/style.css --use autoprefixer"
   },
   "repository": {
     "type": "git",

@@ -59,7 +59,7 @@
             &__item li:hover {
                 background: $shadow-color;
                  cursor: pointer;
-                box-shadow: 2px 6px 20px rgb(153 153 153 / 60%);
+                box-shadow: 2px 6px 20px $color-gris-light;
                  z-index: 1;
             .action__icon {
                     color: $color-primary;
