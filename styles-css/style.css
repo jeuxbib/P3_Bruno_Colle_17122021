@@ -386,7 +386,7 @@ header .logo {
 }
 .carte .heart:hover {
   cursor: pointer;
-  animation: heart 5s infinite alternate;
+  animation: heart 10s infinite;
   background:linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;

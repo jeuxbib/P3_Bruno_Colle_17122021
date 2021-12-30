@@ -1,19 +1,21 @@
 {
-  "name": "Bruno_Colle_17122021",
+  "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "OhMyFood",
+  "description": "Dynamiser une page web avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass ./sass/main.scss:./styles-css/style.css --watch --no-source-map --style compressed",
+    "prefix": "postcss ./styles-css/style.css --use autoprefixer -d ./styles-css/prefixed/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeuxbib/P3_Bruno_Colle_17122021.git"
   },
+
   "author": "Bruno Colle",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jeuxbib/P3_Bruno_Colle_17122021/issues"
-  },
-  "homepage": "https://github.com/jeuxbib/P3_Bruno_Colle_17122021#readme"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+   }
 }

@@ -56,8 +56,8 @@
 // Heart color hover
 @mixin heart-color {
     cursor: pointer;
-    animation: heart 2s ease-out;
-    background: linear-gradient($color-secondary, $color-primary);
+    animation: heart 10s infinite;
+    background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
     background-clip: text;
     //L'arrière-plan est limité (rogné) au texte en premier plan.
     -webkit-background-clip: text;
