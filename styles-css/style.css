@@ -7,6 +7,14 @@
     opacity: 0;
   }
 }
+@keyframes flash {
+  0% {
+      opacity: .1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 @keyframes defilement-rtl {
   0% {
     transform: translate3d(0, 0, 0);
@@ -33,15 +41,6 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-/* la rotation de mon img loader*/
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 /* Coloration coeur a faire */
