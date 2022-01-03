@@ -1,12 +1,4 @@
 @charset "UTF-8";
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @keyframes defilement-rtl {
   0% {
     transform: translate3d(0, 0, 0);
@@ -148,10 +140,7 @@ p {
   justify-content: center;
   align-items: flex-end;
 }
-#loader .logo1 .flash img {
-  opacity: 1;
-  animation: flash 1.5s;
-}
+
 @keyframes flash {
   0% {
     opacity: 0.1;
@@ -163,15 +152,15 @@ p {
 #loader .logo1 img {
   max-width: 200px;
   position: fixed;
-  animation: flash 1.5s;
+  animation: flash 3s;
 }
 #loader .slogan1 {
   display: flex;
   justify-content: center;
   text-align: center;
-  max-height: 100vh;
+  max-height: 100vm;
   border-radius: 10px;
-  background: #9356DC;
+  background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   line-height: 3rem;
   font-family: "Shrikhand";
   color: white;

@@ -1,4 +1,4 @@
-//Accueil loading spinner
+//Accueil
 #loader {
     @include flex-config ($flex: 2, $flex-direction: column, $align-items: center, $justify-content: center);
     background: $color-gris-light;
@@ -16,10 +16,6 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        .flash img {
-            opacity: 1;
-            animation: flash 1.5s;
-        }
         @keyframes flash {
             0% {
                 opacity: .1;
@@ -31,16 +27,16 @@
         img {
             max-width: 200px;
             position: fixed;
-            animation: flash 1.5s;
+            animation: flash 3s;
         }
     }
     .slogan1 {
         display: flex;
         justify-content: center;
         text-align: center;
-        max-height: 100vh;
+        max-height: 100vm;
         border-radius: 10px;
-        background: $color-primary;
+        background: $linear-gradient;
         line-height: 3rem;
         font-family: 'Shrikhand';
         color: $color-white;

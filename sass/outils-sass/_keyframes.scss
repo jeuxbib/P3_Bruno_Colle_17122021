@@ -1,14 +1,4 @@
-    //loader
-    @keyframes loader {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    
-    //défilement horizontal
+ //défilement horizontal
     @keyframes defilement-rtl {
         0% {
             transform:translate3d(0, 0, 0);
@@ -53,6 +43,7 @@
             opacity: 1;
         }
     }
+
     /* Coloration coeur a faire */
     @keyframes heart {
         0% {
