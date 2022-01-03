@@ -1,4 +1,20 @@
 @charset "UTF-8";
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes defilement-rtl {
   0% {
     transform: translate3d(0, 0, 0);
@@ -12,14 +28,6 @@
 @keyframes clignote {
   50% {
     opacity: 0;
-  }
-}
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(360deg);
-  }
-  to {
-    -webkit-transform: rotate(0deg);
   }
 }
 @keyframes fadein {
@@ -40,9 +48,13 @@
     transform: translateY(0);
   }
 }
-@keyframes flash {
+/* Coloration coeur */
+@keyframes heart {
   0% {
-    opacity: 0.1;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;

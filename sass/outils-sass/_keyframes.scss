@@ -1,4 +1,22 @@
- //défilement horizontal
+    
+    //loader
+    @keyframes loader {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes flash {
+        0% {
+            opacity: .1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    //défilement horizontal
     @keyframes defilement-rtl {
         0% {
             transform:translate3d(0, 0, 0);
@@ -18,14 +36,6 @@
     }
     
     //Décalage ouverture sur page menu
-    @keyframes rotate {
-        from {
-            -webkit-transform: rotate(360deg);
-        }
-        to {
-            -webkit-transform: rotate(0deg);
-        }
-    }
     @keyframes fadein {
         from {
             opacity: 0;
@@ -46,15 +56,21 @@
         }
     }
     
-   
-    @keyframes flash {
+    /* Coloration coeur */
+    @keyframes heart {
         0% {
-            opacity: .1;
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
         }
         100% {
             opacity: 1;
         }
     }
+    
+   
+   
 
     /* Coloration coeur a faire */
     @keyframes heart {
