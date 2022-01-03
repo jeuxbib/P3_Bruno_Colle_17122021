@@ -9,6 +9,19 @@
     /* position finale à gauche */
   }
 }
+@keyframes clignote {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -140,7 +153,6 @@ p {
   justify-content: center;
   align-items: flex-end;
 }
-
 @keyframes flash {
   0% {
     opacity: 0.1;

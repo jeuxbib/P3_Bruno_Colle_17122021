@@ -10,10 +10,22 @@
         }
     }
     
-    // card new a faire
-    
+    // card new
+    @keyframes clignote {
+        50% {
+            opacity: 0;
+        }
+    }
     
     //Décalage ouverture sur page menu
+    @keyframes rotate {
+        from {
+            -webkit-transform: rotate(360deg);
+        }
+        to {
+            -webkit-transform: rotate(0deg);
+        }
+    }
     @keyframes fadein {
         from {
             opacity: 0;

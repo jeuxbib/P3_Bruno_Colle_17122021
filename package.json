@@ -4,7 +4,7 @@
   "description": "Dynamiser une page web avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/style.scss:./styles-css/style.css --no-source-map --style expanded",
+    "sass": "sass --watch ./sass/style.scss:css/style.css --no-source-map --style=expanded",
     "prefix": "postcss ./styles-css/style.css --use autoprefixer"
   },
   "repository": {
