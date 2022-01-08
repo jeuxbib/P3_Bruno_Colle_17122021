@@ -4,7 +4,7 @@
   "description": "Dynamiser une page web avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/style.scss:css/style.css --no-source-map --style=expanded"  
+    "sass": "sass --watch ./sass/style.scss:css/style.css --no-source-map --style=expanded"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   },
   "author": "Bruno Colle",
   "license": "ISC",
-  "dependencies":{
+  "dependencies": {
     "normalize.css": "^8.0.1"
   }
 }
