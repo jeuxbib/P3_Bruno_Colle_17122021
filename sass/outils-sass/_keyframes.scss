@@ -27,7 +27,14 @@
             /* position finale à gauche */
         }
     }
-    
+    @keyframes rotate {
+        from {
+            -webkit-transform: rotate(360deg);
+        }
+        to {
+            -webkit-transform: rotate(0deg);
+        }
+    }
     // card new
     @keyframes clignote {
         50% {
@@ -57,22 +64,6 @@
     }
     
     /* Coloration coeur */
-    @keyframes heart {
-        0% {
-            opacity: 0;
-        }
-        50% {
-            opacity: 0.5;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-   
-   
-
-    /* Coloration coeur a faire */
     @keyframes heart {
         0% {
             opacity: 0;
