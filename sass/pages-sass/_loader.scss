@@ -1,4 +1,4 @@
-//Accueil
+//Accueil loading spinner
 #loader {
     @include flex-config ($flex: 2, $flex-direction: column, $align-items: center, $justify-content: center);
     background: $color-gris-light;
@@ -10,31 +10,23 @@
     top: 0;
     left: 0;
     pointer-events: none;
-    animation: defilement-rtl 2s ease-in-out 2s forwards;
+    animation: defilement-rtl 3s ease-in-out 2s forwards;
   .logo1 {
         margin-top: 200px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        @keyframes flash {
-            0% {
-                opacity: .1;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
         img {
             max-width: 200px;
-            position: fixed;
-            animation: flash 3s;
+            position: absolute;
+            animation: rotate 1.5s linear;
         }
     }
     .slogan1 {
         display: flex;
         justify-content: center;
         text-align: center;
-        max-height: 100vm;
+        max-height: 100vh;
         border-radius: 10px;
         background: $linear-gradient;
         line-height: 3rem;

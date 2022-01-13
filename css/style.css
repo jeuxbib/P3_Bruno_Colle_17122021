@@ -146,7 +146,7 @@ p {
   top: 0;
   left: 0;
   pointer-events: none;
-  animation: defilement-rtl 2s ease-in-out 2s forwards;
+  animation: defilement-rtl 3s ease-in-out 2s forwards;
 }
 #loader .logo1 {
   margin-top: 200px;
@@ -154,24 +154,16 @@ p {
   justify-content: center;
   align-items: flex-end;
 }
-@keyframes flash {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 #loader .logo1 img {
   max-width: 200px;
-  position: fixed;
-  animation: flash 3s;
+  position: absolute;
+  animation: rotate 1.5s linear;
 }
 #loader .slogan1 {
   display: flex;
   justify-content: center;
   text-align: center;
-  max-height: 100vm;
+  max-height: 100vh;
   border-radius: 10px;
   background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   line-height: 3rem;
